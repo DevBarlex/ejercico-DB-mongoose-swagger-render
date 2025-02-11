@@ -1,31 +1,29 @@
 module.exports = {
     components:{
         schemas:{
-            User:{
+            Task:{
                 type:'object',
                 properties:{
                     _id:{
                         type:'objectId',
-                        description:"user identification number",
+                        description:"task identification number",
                         example:"6201064b0028de7866e2b2c4"
                     }, 
-                    username:{
+                    title:{
                         type:'string',
-                        description:"username to register",
-                        example:"Jhon"
+                        description:"title task",
+                        example:"Aprender swagger"
                     },
-                    email:{
-                        type:'string',
-                        description:"email to register",
-                        example:"jhon@gmail.com"
+                    completed:{
+                        type:'boolean',
+                        description:"task completed or not",
+                        example:"false"
                     },
-                    email:{
-                        type:'string',
-                        description:"user password",
-                        example:"123456"
-                    }
+
                 }
             }
         }
     } 
 }
+
+//Definimos los esqquemas, los modelos que vamos a utilizar en el proyecto
